@@ -1,5 +1,8 @@
 import './App.css';
-import MultipleFormInput from './components/forms/MultipleFormInput';
+import Accordion from './Projects/Accordion';
+// import UncontrolledFormHanling from './components/forms/UncontrolledFormHanling';
+// import MultipleFormInput from './components/forms/MultipleFormInput';
+// import ValidInput from './components/forms/ValidInput';
 // import Checkbox from './components/forms/Checkbox.jsx';
 // import DropDown from './components/forms/dropDown';
 // import Form from './components/forms/formPOne';
@@ -16,7 +19,11 @@ function App() {
        {/* <Form/> */}
        {/* <DropDown/> */}
        {/* <Checkbox/> */}
-       <MultipleFormInput/>
+       {/* <MultipleFormInput/> */}
+       {/* <ValidInput/> */}
+       {/* <UncontrolledFormHanling/> */}
+       <Accordion/>
+       
   
      
     </div>
