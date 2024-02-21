@@ -1,5 +1,7 @@
 import './App.css';
-import Accordion from './Projects/Accordion';
+import StarRating from './Projects/StarRating/StarRating';
+
+// import Accordion from './Projects/Accordion';
 // import UncontrolledFormHanling from './components/forms/UncontrolledFormHanling';
 // import MultipleFormInput from './components/forms/MultipleFormInput';
 // import ValidInput from './components/forms/ValidInput';
@@ -13,16 +15,19 @@ import Accordion from './Projects/Accordion';
 function App() {
   return (
     <div className="App">
-      {/* <UseOfFetch/> */}
-      {/* <Counter/> */}
-      {/* <Increamenter/> */}
+       {/* <UseOfFetch/> */}
+       {/* <Counter/> */}
+       {/* <Increamenter/> */}
        {/* <Form/> */}
        {/* <DropDown/> */}
        {/* <Checkbox/> */}
        {/* <MultipleFormInput/> */}
        {/* <ValidInput/> */}
        {/* <UncontrolledFormHanling/> */}
-       <Accordion/>
+       {/* <Accordion/> */}
+       <StarRating/>
+       
+       
        
   
      
