@@ -25,7 +25,7 @@ function App() {
        {/* <ValidInput/> */}
        {/* <UncontrolledFormHanling/> */}
        {/* <Accordion/> */}
-       <StarRating/>
+       <StarRating noOfstars={10}/>
        
        
        

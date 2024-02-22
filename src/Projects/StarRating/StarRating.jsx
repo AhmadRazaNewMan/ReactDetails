@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {FaStar} from "react-icons/fa"
+import './StarRating.css'
 
-const StarRating = () => {
-    const starDiv = [];
-    for (let i = 0; i < 5; i++) {
-        starDiv.push(<div key={i} className='star' style={{ width: "20px", height: "20px", border: "1px solid black", display: "inline-block", margin: "5px" }}></div>);
+const StarRating = ({noOfstars}) => {
+    const [rating,setRating] = useState(0)
+    const [hover,setHover] = useState(0)
+
+    const handleClick = (index)=>{ 
+        setRating(index)
     }
+    const onMouseEnter = (index)=>{
+        setHover(index)
+    }
+    const onMouseLeave = ()=>{
+       setHover(rating)
+    }
+
+   
+   
     return (
-        <div>
-            {starDiv.map((star, index) => (
-                <React.Fragment key={index}>{star}</React.Fragment>
-            ))}
+        <div className='star-rating'>
+            {[...Array(noOfstars)].map((_,index)=>{
+                index++
+                return <FaStar
+                className={index<=(hover || rating) ? "on" : "off"}
+                key={index}
+                onClick={()=>handleClick(index)}
+                onMouseEnter={()=>onMouseEnter(index)}
+                onMouseLeave={()=>onMouseLeave()}
+                size={40}
+                />
+                
+                
+            })}
+           
         </div>
     );
 }
