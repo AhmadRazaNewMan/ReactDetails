@@ -1,6 +1,7 @@
 import './App.css';
-import StarRating from './Projects/StarRating/StarRating';
-
+import LoadMoreButton from './Projects/LoadMoreButton/LoadMoreButton';
+// import ImageSlider from './Projects/ImageSlider/ImageSlider';
+// import StarRating from './Projects/StarRating/StarRating';
 // import Accordion from './Projects/Accordion';
 // import UncontrolledFormHanling from './components/forms/UncontrolledFormHanling';
 // import MultipleFormInput from './components/forms/MultipleFormInput';
@@ -25,9 +26,10 @@ function App() {
        {/* <ValidInput/> */}
        {/* <UncontrolledFormHanling/> */}
        {/* <Accordion/> */}
-       <StarRating noOfstars={10}/>
+       {/* <StarRating noOfstars={10}/> */}
        
-       
+        {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={"5"} page={1}/> */}
+        <LoadMoreButton/>
        
   
      
